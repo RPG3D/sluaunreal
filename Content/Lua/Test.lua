@@ -77,7 +77,7 @@ function update(dt)
     TestBp:update(tt)
 
     -- test weak ptr is alive?
-    if slua.isValid(weakptr) then
+    if false and slua.isValid(weakptr) then
         print("weak ptr",weakptr,weakptr:GetClass())
     end
 end

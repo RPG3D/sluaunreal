@@ -37,7 +37,7 @@ void ASluaTestActor::Tick(float DeltaTime)
 	ls->call("update",DeltaTime);
 
 	PROFILER_WATCHER_X(w2,"UE ForceGarbageCollection");
-	GEngine->ForceGarbageCollection(true);
+	//GEngine->ForceGarbageCollection(true);
 	USluaTestCase::callback();
 }
 

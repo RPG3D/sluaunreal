@@ -10,9 +10,11 @@ public class democppEditorTarget : TargetRules
 		Type = TargetType.Editor;
 #if UE_5_4_OR_LATER
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		WindowsPlatform.bStrictConformanceMode = true;
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
+        CppStandard = CppStandardVersion.Cpp20;
+
 #endif
 
-		ExtraModuleNames.AddRange( new string[] { "democpp" } );
+        ExtraModuleNames.AddRange( new string[] { "democpp" } );
 	}
 }
